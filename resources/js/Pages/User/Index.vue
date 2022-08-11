@@ -10,7 +10,6 @@
             <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
                 <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
                     <div class="p-6 sm:px-20 bg-white borde-b border-gray-200"> 
-                        <!-- <InertiaLink :href="route('user.create')">Crear User</InertiaLink> -->
                         <Link :href="route('user.create')">Crear User</Link>
                         <table class="table-auto w-full">
                             <thead>
@@ -30,7 +29,6 @@
                                         <Link :href="route('user.show', { customer: u })">Ver</Link>
                                         <Link :href="route('user.edit', { customer: u })">Editar</Link>
                                         <button @click="daleteUser(u)">Eliminar</button>
-                                        <Link :href="route('user.destroy', { customer: u })" method="DELETE" as="button" type="button">Eliminar</Link>
                                     </td>
                                 </tr>
                             </tbody>
